@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+  width: 100vw;
+  padding: 2vh 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar-contents {
+  margin: 0 20px;
+}
+
+.nav-bar {
+  width: 100vw;
+  height: 40px;
+  background-color: black;
+}
+
+
+.nav-lists {
+  display: flex;
+  justify-content: 20px;
+  margin: 5px 40px;
+}
+
+.menu-lists {
+  display: flex;
+  justify-content: 20px;
+  margin: 5px 40px;
+}
+
+.head-border {
+  width: 100vw;
+  height: 1px;
+  background-color: lightgray;
+}
