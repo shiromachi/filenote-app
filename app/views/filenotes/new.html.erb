@@ -1,0 +1,37 @@
+<%= render "header" %>
+<div class='main-bar'>
+  <p class='note'>>>Notes</p>
+</div>
+<div class='head-border'>
+</div>
+
+<div class='memo-page'>
+  <div class='memo-page__inner clearfix'>
+      <%= form_with local: true do |f|%>
+        <div class='field'>
+          <div class='field-label'>
+            <%= f.label :title%>
+          </div>
+          <div class='field-input-title'>
+            <%= f.text_field :title, autofocus: true%>
+          </div>
+          <div class='field'>
+            <div class='field-label'>
+              <%= f.label :memo%>
+            </div>
+            <div class='field-input-memo'>
+              <%= f.text_field :memo, autocomplete: "off"%>
+            </div>
+          </div>
+          <div class='actions'>
+            <%= f.submit "add", class: 'btn'%>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>
+
+<div class="memo-page">
+  <div class='memo-page__inner clearfix'>
+  </div>
+</div>

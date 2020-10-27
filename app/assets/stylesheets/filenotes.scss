@@ -1,0 +1,80 @@
+.login {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: white;
+}
+
+.work-link {
+  text-decoration: none;
+  font-size: 30px;
+  color: darkgray;
+  margin: 20px;
+}
+
+.note-link {
+  text-decoration: none;
+  font-size: 30px;
+  color: darkgray;
+  margin: 20px;
+}
+
+.note {
+  text-decoration: none;
+  font-size: 30px;
+  color: darkgray;
+  margin: 5px  20px 5px 60px;
+}
+
+.field-input-title {
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.memo-page .memo-page__inner {
+  width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.memo-page .memo-page__inner {
+  float: left;
+  width: 40%;
+  margin: 20px;
+}
+
+.memo-page .field .field-label {
+  padding: 5px 0;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.memo-page .field {
+  font-size: 15px;
+}
+
+.memo-page .btn {
+  display: inline-block;
+  height: 40px;
+  padding: 0 30px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+}
+
+.memo-page input[type=submit] {
+  float: left;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #5f5f5f;
+}
