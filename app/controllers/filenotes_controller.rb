@@ -5,4 +5,7 @@ class FilenotesController < ApplicationController
 
   def create
   end
+
+  def destroy
+  end
 end
