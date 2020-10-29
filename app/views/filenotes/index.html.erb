@@ -2,7 +2,7 @@
 <div class='main-bar'>
     <% if user_signed_in? %>
       <ul class='menu-lists'>
-        <li><%= link_to 'Works', "#", class: "work-link" %></li>
+        <li><%= link_to 'Works', works_path, class: "work-link" %></li>
         <li><%= link_to 'Notes', new_filenote_path, method: :get, class: "note-link" %></li>
       </ul>
     <% end %>
