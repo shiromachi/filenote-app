@@ -9,8 +9,14 @@
 <div class='account-page'>
   <div class='account-page__inner clearfix'>
     <div class='account-page__inner--right user-form'>
-      <%= form_with local: true do |f|%>
+      <%= form_with url: works_path, method: :post, local: true do |f|%>
         <div class='field'>
+          <div class='field-label'>
+            <%= f.label :サムネイルを選択してください%>
+          </div>
+          <div class='field-input'>
+            <%= f.file_field :image, name:'work[image]', id:"work-image" %>
+          </div>
           <div class='field-label'>
             <%= f.label :アプリケーション名%>
           </div>
@@ -30,7 +36,7 @@
               <%= f.text_field :text, autocomplete: "off"%>
             </div>
           <div class='actions'>
-            <%= f.submit "add", class: 'btn'%>
+            <%= f.submit "追加", class: 'btn'%>
           </div>
         </div>
       <% end %>
