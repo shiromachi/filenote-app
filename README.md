@@ -1,3 +1,7 @@
+# filenote-app
+
+- 勉強した内容とアウトプットをまとめたい。
+
 ## users テーブル
 
 | Column             | Type   | Options     |

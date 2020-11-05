@@ -6,24 +6,24 @@
 </div>
 
 <div class='memo-page'>
-  <div class='memo-page__inner clearfix'>
-      <%= form_with local: true do |f|%>
+  <div class='memo-page__inner'>
+      <%= form_with local: true do |f| %>
         <div class='field'>
           <div class='field-label'>
-            <%= f.label :title%>
+            <%= f.label :title %>
           </div>
           <div class='field-input-title'>
-            <%= f.text_field :title, autofocus: true%>
+            <%= f.text_field :title, autofocus: true %>
           </div>
           <div class='field'>
             <div class='field-label'>
               <%= f.label :memo%>
             </div>
             <div class='field-input-memo'>
-              <%= f.text_field :memo, autocomplete: "off"%>
+              <%= f.text_field :memo, autocomplete: true %>
             </div>
           </div>
-          <div class='actions'>
+          <div class='field'>
             <%= f.submit "add", class: 'btn'%>
           </div>
         </div>
@@ -32,6 +32,7 @@
 </div>
 
 <div class="memo-page">
-  <div class='memo-page__inner clearfix'>
+  <div class='memo-page__in'>
+  <p>memo表示する</p>
   </div>
 </div>
