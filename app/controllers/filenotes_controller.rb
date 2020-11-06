@@ -1,4 +1,5 @@
 class FilenotesController < ApplicationController
+  
   def new
     @filenotes = Filenote.all
   end
@@ -13,6 +14,9 @@ class FilenotesController < ApplicationController
   end
 
   def destroy
+    filenote = Filenote.find(params[:id])
+    filenote.destroy
+    redirect_to new_filenote_path 
   end
 
   private
