@@ -1,6 +1,7 @@
 <%= render "filenotes/header" %>
 <div class='main-bar'>
-  <p class='note'>>>Works</p>
+  <%= link_to '>> Works', works_path, class: "note" %>
+  <% breadcrumb :work %>
   <%=link_to image_tag("plus.png"), new_work_path, class: 'plus' %>
 </div>
 <div class='head-border'>
@@ -43,3 +44,5 @@
     </div>
   </div>
 </div>
+
+<%= render "filenotes/footer" %>

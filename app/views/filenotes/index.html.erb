@@ -1,37 +1,38 @@
+<div class='whole-space'>
     <%= render partial: "header" %>
     <div class="white-page">
       <% if user_signed_in? %>
-        <div class='main-bar'>
-          <ul class='menu-lists'>
-            <li><%= link_to 'Works', works_path, class: "work-link" %></li>
-            <li><%= link_to 'Notes', new_filenote_path, method: :get, class: "note-link" %></li>
-          </ul>
-        </div>
-        <div class='head-border'>
-        </div>
-    </div>
-    
-    <body>
-      <div class='main-body'>
-        <div class='form-left'>
-          <form class='todo'>
-            <textarea placeholder="ToDoリスト" class='todo-in'></textarea>
-          </form>
-        </div>
-      <% end %>
-      <% unless user_signed_in? %>
-        <div class='main-contents'>
-          <div class='left-content'>
-            <div class='tweet-block'>
-              <a class="twitter-timeline" href="https://twitter.com/wOt1nqKKkhrKWpq?ref_src=twsrc%5Etfw">Tweets by wOt1nqKKkhrKWpq</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class='main-bar'>
+              <ul class='menu-lists'>
+                <li><%= link_to 'Works', works_path, class: "work-link" %></li>
+                <li><%= link_to 'Notes', new_filenote_path, method: :get, class: "note-link" %></li>
+              </ul>
+              <% breadcrumb :root %>
             </div>
-          </div>
+            <div class='head-border'>
+            </div>
         </div>
+        
+       <body>
+          <div class='main-body'>
+            <div class='form-left'>
+              <form class='todo'>
+                <textarea placeholder="ToDoリスト" class='todo-in'></textarea>
+              </form>
+            </div>
       <% end %>
-      </div>
-    </body>
-  
-  <footer>
-    <div class='foot-bar'>
-    </div>
-  </footer>
+          <% unless user_signed_in? %>
+              <div class='top-contents'>
+                <div class='tweet-block'>
+                  <a class="twitter-timeline" href="https://twitter.com/wOt1nqKKkhrKWpq?ref_src=twsrc%5Etfw">Tweets by wOt1nqKKkhrKWpq</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class='slide-form'>
+                  <%= "slide表示させたい" %>
+                </div>
+              </div>
+          <% end %>
+          </div>
+       </body>
+</div>
+
+<%= render "footer" %>

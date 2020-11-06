@@ -1,6 +1,6 @@
 .account-page .account-page__inner {
-  width: 500px;
-  margin: 60px auto;
+  width: 400px;
+  margin: 50px auto;
   padding: 60px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -42,7 +42,9 @@ h1 {
   width: 100%;
   padding: 10px;
   letter-spacing: 1px;
+  border-radius: 3px;
 }
+
 .account-page .btn {
   display: inline-block;
   height: 40px;

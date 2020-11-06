@@ -1,5 +1,11 @@
-.foot-bar {
-  height: 40px;
+footer {
   width: 100vw;
-  background-color: darkgray;
+  height: 35px;
+  background-color: #ddd;
+}
+
+.pan-link {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
 }

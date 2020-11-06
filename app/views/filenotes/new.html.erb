@@ -2,6 +2,7 @@
 <div class='main-bar'>
   <p class='note'>>> Notes</p>
 </div>
+<% breadcrumb :filenotes %>
 <div class='head-border'>
 </div>
 
@@ -29,15 +30,17 @@
       </div>
     <% end %>
   </div>
-</div>
 
   <div class='note-contents'>
-    <div class='note__wrapper'>
-      <% @filenotes.reverse_each do |filenote| %>
-        <div class="note-content">
-          <div class='note-title'><%= filenote.title %></div>
-          <div class='note-text'><%= filenote.memo %></div>
-        </div>
-      <% end %>
-    </div> 
+      <div class='note-file'>
+        <% @filenotes.reverse_each do |filenote| %>
+          <div class="note-content">
+            <div class='note-title'><%= filenote.title %></div>
+            <div class='note-text'><%= filenote.memo %></div>
+          </div>
+        <% end %>
+      </div>
   </div>
+</div>
+
+<%= render "footer" %>
