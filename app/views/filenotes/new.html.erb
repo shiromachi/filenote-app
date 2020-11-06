@@ -1,38 +1,43 @@
 <%= render "header" %>
 <div class='main-bar'>
-  <p class='note'>>>Notes</p>
+  <p class='note'>>> Notes</p>
 </div>
 <div class='head-border'>
 </div>
 
 <div class='memo-page'>
   <div class='memo-page__inner'>
-      <%= form_with local: true do |f| %>
+    <%= form_with url: filenotes_path, local: true do |f| %>
+      <div class='field'>
+        <div class='field-label'>
+          <%= f.label :title %>
+        </div>
+        <div class='field-input-title'>
+          <%= f.text_field :title, autofocus: true %>
+        </div>
         <div class='field'>
           <div class='field-label'>
-            <%= f.label :title %>
+            <%= f.label :memo%>
           </div>
-          <div class='field-input-title'>
-            <%= f.text_field :title, autofocus: true %>
-          </div>
-          <div class='field'>
-            <div class='field-label'>
-              <%= f.label :memo%>
-            </div>
-            <div class='field-input-memo'>
-              <%= f.text_field :memo, autocomplete: true %>
-            </div>
-          </div>
-          <div class='field'>
-            <%= f.submit "add", class: 'btn'%>
+          <div class='field-input-memo'>
+            <%= f.text_field :memo, autocomplete: true %>
           </div>
         </div>
-      <% end %>
+        <div class='field'>
+          <%= f.submit "add", class: 'btn'%>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
 
-<div class="memo-page">
-  <div class='memo-page__in'>
-  <p>memo表示する</p>
+  <div class='note-contents'>
+    <div class='note__wrapper'>
+      <% @filenotes.reverse_each do |filenote| %>
+        <div class="note-content">
+          <div class='note-title'><%= filenote.title %></div>
+          <div class='note-text'><%= filenote.memo %></div>
+        </div>
+      <% end %>
+    </div> 
   </div>
-</div>

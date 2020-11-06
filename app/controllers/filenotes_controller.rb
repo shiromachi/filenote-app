@@ -18,6 +18,6 @@ class FilenotesController < ApplicationController
   private
 
   def filenote_params
-    params.require(:filenote).permit(:title, :memo).merge(user_id: current_user.id)
+    params.permit(:title, :memo).merge(user_id: current_user.id)
   end
 end

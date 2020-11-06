@@ -1,5 +1,4 @@
 <%= render "filenotes/header" %>
-<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 <div class='main-bar'>
   <p class='note'>>>Works</p>
   <%=link_to image_tag("plus.png"), new_work_path, class: 'plus' %>
@@ -7,8 +6,21 @@
 <div class='head-border'>
 </div>
 
-<div class='work-contents'>
-  <% @works.reverse_each do |work| %>
-    <div class='work-content'><%= work.app_name %></div>
-  <% end %>
-</div>
+<main class='work-contents'>
+  <div class='content-inner'>
+    <center><p class='page-heading'>アプリ一覧</p>
+    <div class='tun-border'></div></center>
+    <div class='work__wrapper'>
+      <% @works.reverse_each do |work| %>
+        <div class="content">
+          <%= image_tag work.image, class: 'work-image' %>
+          <div class='work-title'><%= work.app_name %></div>
+          <div class='work-url'><div class='icon-block'><%= image_tag "icon.png", class: 'icon' %></div><%= work.url %></div>
+          <div class='text'>
+            <div class='work-text'><%= work.text %></div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</main>
