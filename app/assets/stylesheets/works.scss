@@ -36,8 +36,12 @@
   width: calc(1010px / 3);
   margin-bottom: 40px;
   background-color: #ddd;
-  border: 1px solid #ddd;
   border-radius: 20px;
+  display: block;
+}
+
+.work-edit-icon {
+  height: 20px;
 }
 
 .work-close-icon {
@@ -60,10 +64,15 @@
 }
 
 .work-url {
-  font-size: 14px;
   margin: 6px 28px;
-  color: gray;
   display: flex;
+}
+
+.url-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: gray;
+  display: inline-block;
 }
 
 .icon-block {
@@ -71,7 +80,7 @@
 }
 
 .icon {
-  margin: 0 10px 0 0;
+  margin-right: 10px;
 }
 
 .text {

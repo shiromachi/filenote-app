@@ -1,4 +1,5 @@
 <div class='whole-space'>
+   <script src="index.js"></script>
     <%= render partial: "header" %>
     <div class="white-page">
       <% if user_signed_in? %>
@@ -17,7 +18,9 @@
           <div class='main-body'>
             <div class='form-left'>
               <form class='todo'>
-                <textarea placeholder="ToDoリスト" class='todo-in'></textarea>
+                <div contenteditable="true", class='todo-in'>
+                  Todoリスト
+                </div>
               </form>
             </div>
       <% end %>
