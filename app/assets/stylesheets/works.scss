@@ -4,7 +4,7 @@
 }
 
 .plus {
-  margin: 10px 0 0;
+  margin: 7px 0 0;
 }
 
 .page-heading {
@@ -40,19 +40,25 @@
   display: block;
 }
 
+.icon-images {
+  padding: 10px 0 0;
+  display: flex;
+}
+
 .work-edit-icon {
   height: 20px;
+  margin-left: 260px;
 }
 
 .work-close-icon {
   height: 20px;
-  margin: 10px 0 0 300px;
+  margin-left: 15px;
 }
 
 .work-image {
   height: 200px;
   width: 280px;
-  margin: 16px 28px;
+  margin: 10px 28px;
   border-radius: 20px;
 }
 
@@ -60,19 +66,13 @@
   font-size: 20px;
   margin: 4px 28px;
   color: navy;
-  border: 1px solid #ddd;
 }
 
 .work-url {
   margin: 6px 28px;
   display: flex;
-}
-
-.url-link {
-  text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   color: gray;
-  display: inline-block;
 }
 
 .icon-block {

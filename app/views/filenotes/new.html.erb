@@ -34,10 +34,12 @@
   <div class='note-contents'>
       <div class='note-file'>
         <% @filenotes.reverse_each do |filenote| %>
-          <div class="note-content">
-            <%= link_to image_tag("close-icon.png", class: 'close-icon'), filenote_path(filenote.id), method: :delete %>
-            <div class='note-title'><%= filenote.title %></div>
-            <div class='note-text'><%= filenote.memo %></div>
+          <div class='memo-page2__inner'>
+            <div class="note-content">
+              <%= link_to image_tag("close-icon.png", class: 'close-icon'), filenote_path(filenote.id), method: :delete %>
+              <div class='note-title'><%= filenote.title %></div>
+              <div class='note-text'><%= filenote.memo %></div>
+            </div>
           </div>
         <% end %>
       </div>

@@ -1,8 +1,10 @@
 <header class='top-page-header'>
   <div class='top-bar-contents'>
-    <%= link_to image_tag("filenote-logo.png", class:"filenote-icon"), "/" %>
+    <%= link_to image_tag("filenote-logo2.png", class:"filenote-icon"), "/" %>
   </div>
+
   <div class='nav-bar'>
+    <div class="home-btn"><%= link_to image_tag("home_white"), "/" %></div>
     <ul class='nav-lists'>
       <% if user_signed_in? %>
         <li><%= link_to current_user.name + "さんのページ", "#", class: "login" %></li>

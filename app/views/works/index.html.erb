@@ -13,14 +13,16 @@
     <div class='tun-border'></div></center>
     <div class='work__wrapper'>
       <% @works.reverse_each do |work| %>
-        <div class="content">
-          <%= image_tag "edit_black.png", class: 'work-edit-icon' %>
-          <%= link_to image_tag("close-icon.png", class: 'work-close-icon'), work_path(work.id), method: :delete %>
+        <div class='content'>
+          <div class='icon-images'>
+            <%= link_to image_tag("edit_black.png", class: 'work-edit-icon'), edit_work_path(work.id) %>
+            <%= link_to image_tag("close-icon.png", class: 'work-close-icon'), work_path(work.id), method: :delete %>
+          </div>
           <%= image_tag work.image, class: 'work-image' %>
           <div class='work-title'><%= work.app_name %></div>
           <div class='work-url'>
             <div class='icon-block'><%= image_tag "icon.png", class: 'icon' %></div>
-            <form class='url-link'><%= link_to work.url %></form>
+            <%= link_to work.url, work.url %>
           </div>
           <div class='text'>
             <div class='work-text'><%= work.text %></div>
