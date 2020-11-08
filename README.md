@@ -7,6 +7,10 @@
 ## 本番環境
 https://filenote-app.herokuapp.com/
 
+テストアカウント : sample.sample.com
+パスワード：radish12
+
+
 ## 制作背景
 
 勉強した内容を簡単にまとめたい。
