@@ -57,5 +57,5 @@ gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
 gem "gretel"
 group :production do
-  gem 'rails_12factor'
+  gem 'rails_12factor', group: :production
 end
