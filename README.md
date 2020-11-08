@@ -5,10 +5,6 @@
 今までに作ったアプリケーションや作品をまとまる事ができ、別ページで簡易的なメモを投稿する事ができる。
 
 ## 本番環境
-https://filenote-app.herokuapp.com/
-
-テストアカウント : sample.sample.com
-パスワード：radish12
 
 
 ## 制作背景
