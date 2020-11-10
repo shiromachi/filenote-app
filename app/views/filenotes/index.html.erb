@@ -25,11 +25,14 @@
       <% end %>
           <% unless user_signed_in? %>
               <div class='top-contents'>
+                <div class='slider-content'>
+                  <div class="slider">
+                    <%= image_tag "filenote_ER.png", class: 'image1' %>
+                    <%= image_tag "filenote-note.png" %>
+                  </div>
+                </div>
                 <div class='tweet-block'>
                   <a class="twitter-timeline" href="https://twitter.com/wOt1nqKKkhrKWpq?ref_src=twsrc%5Etfw">Tweets by wOt1nqKKkhrKWpq</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-                <div class='slide-form'>
-                  <%= "slide表示させたい" %>
                 </div>
               </div>
           <% end %>
