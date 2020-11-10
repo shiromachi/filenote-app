@@ -8,6 +8,11 @@
 
 https://filenote-app.herokuapp.com/
 
+###テストアカウント
+
+email：sample@sample.com
+password：radish12
+
 ## 制作背景
 
 勉強した内容を簡単にまとめたい。
