@@ -1,4 +1,5 @@
 # filenote-app
+<img width="1063" alt="スクリーンショット 2020-11-11 23 20 01" src="https://user-images.githubusercontent.com/71426314/98845129-9ba36780-2490-11eb-90cd-acc641b7f6a6.png">
 
 ## 概要
 
@@ -22,6 +23,8 @@ https://filenote-app.herokuapp.com/
 ## 開発環境
 
 Html/CSS/Ruby/Ruby on Rails/Jquery
+
+
 
 
 # DB設計
