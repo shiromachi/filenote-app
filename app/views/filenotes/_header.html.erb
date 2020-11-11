@@ -1,6 +1,19 @@
 <header class='top-page-header'>
-  <div class='top-bar-contents'>
-    <%= link_to image_tag("filenote-logo.png", class:"filenote-icon"), "/" %>
+  <div class='top'>
+    <div class='top-up'>
+      <form class="top-search-form">
+        <input type="text" placeholder="キーワードで探す" class='top-search'>
+        <input type="submit" value='検索' class='top-search-btn'>
+      </form>
+    </div>
+    <div class='top-right'>
+      <div class='top-image'>
+        <%= link_to image_tag("filenote-logo.png", class:"filenote-icon"), "/" %>
+        <%= "  It's a simple filing note." %>
+      </div>
+    </div>
+  </div>
+  <div class='top-left'>
   </div>
   <div class="top-border4">
   </div>

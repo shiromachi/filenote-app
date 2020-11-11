@@ -1,6 +1,8 @@
 <%= render "header" %>
 <div class='main-bar'>
-  <p class='note'>>> Notes</p>
+  <div class="note-bar">
+    <p class='note'>>> Notes</p>
+  </div>
 </div>
 <% breadcrumb :filenotes %>
 <div class='head-border'>
@@ -32,16 +34,20 @@
   </div>
 
   <div class='note-contents'>
-      <div class='note-file'>
-        <% @filenotes.reverse_each do |filenote| %>
-          <div class='memo-page2__inner'>
-            <div class="note-content">
-              <%= link_to image_tag("close-icon.png", class: 'close-icon'), filenote_path(filenote.id), method: :delete %>
-              <div class='note-title'><%= filenote.title %></div>
-              <div class='note-text'><%= filenote.memo %></div>
+      <div class='memo-page2__inner'>
+        <div class='note__wrapper'>
+          <% @filenotes.reverse_each do |filenote| %>
+            <div class='note-content'>
+              <div>
+                <%= link_to image_tag("close-icon.png", class: 'close-icon'), filenote_path(filenote.id), method: :delete %>
+                <div class='note-title'><%= filenote.title %></div>
+                 <div class='note-texts'>
+                   <div class='note-text'><%= filenote.memo %></div>
+                 </div>
+              </div>
             </div>
-          </div>
-        <% end %>
+          <% end %>
+        </div>
       </div>
   </div>
 </div>

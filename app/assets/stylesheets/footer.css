@@ -1,11 +1,54 @@
-footer {
+.footer-bar {
   width: 100vw;
-  height: 35px;
-  background-color: gray;
+  height: 40px;
+  background-color: #220000;
 }
 
 .pan-link {
-  padding: 10px;
-  text-decoration: none;
-  color: white;
+  margin-left: 20px;
+  color: grey;
+}
+
+.footer-bottom {
+  width: 100vw;
+  height: 200px;
+  background-color: #220000;
+  display: flex;
+}
+
+.footer-left {
+  width: 25%;
+  height: 30px;
+  font-size: 13px;
+  color: cadetblue;
+  margin-left: 200px;
+}
+
+.footer-left-contents {
+}
+
+.footer-middle {
+  width: 20%;
+  height: 30px;
+}
+
+.footer-right {
+  width: 30%;
+  height: 30px;
+}
+
+.footer-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  color: dimgrey;
+  font-size: 20px;
+}
+
+.footer-str {
+  color: cadetblue;
+  font-size: 15px;
+  margin-top: 5px;
 }

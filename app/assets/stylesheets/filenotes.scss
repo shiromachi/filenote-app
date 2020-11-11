@@ -3,44 +3,35 @@ body {
   background-image: url("white-top.jpg");
 }
 
-.whole-space {
-  width: 100vw;
-  height: 100vh;
-}
-
-.main-bar {
-  background-color: white
-}
-
 .login {
   text-decoration: none;
-  color: white;
+  color: #ddd;
   margin: 20px;
 }
 
 .sign-up {
   text-decoration: none;
-  color: white;
+  color: #ddd;
 }
 
 .work-link {
   text-decoration: none;
   font-size: 25px;
-  color: darkgray;
+  color: #432f2f;
   margin: 20px;
 }
 
 .note-link {
   text-decoration: none;
   font-size: 25px;
-  color: darkgray;
+  color: #432f2f;
   margin: 20px;
 }
 
 .note {
   text-decoration: none;
   font-size: 25px;
-  color: darkgray;
+  color: #432f2f;
   margin: 5px  20px 5px 60px;
 }
 
@@ -49,19 +40,36 @@ body {
   letter-spacing: 1px;
 }
 
+.main-body{
+  display: flex;
+}
+
 .form-left {
-  width: 50vw;
+  width: 450px;
   height: 100%;
+  background-color: gainsboro;
 }
 
 .todo-in {
-  width: 300px;
+  width: 280px;
   height: 100px;
-  margin: 20px;
   padding: 10px;
   border-color: #ddd;
   border-radius: 5px;
-  background-color: rgb(207, 207, 207);
+  background-color: white;
+  margin: 30px auto;
+}
+
+.tweet-block {
+  padding: 20px 20px 40px;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+}
+
+.form-right {
+  width: 70%;
 }
 
 .memo-page{
@@ -107,12 +115,17 @@ body {
   background-color: #5f5f5f;
 }
 
-.note-contents {
-  width: 100vw;
+.memo-page2__inner {
+  width: 1024px;
   margin: 0 auto;
 }
 
-.note-file {
+.note-contents{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note__wrapper {
   display: flex;
   flex-wrap: wrap;
 }
@@ -128,19 +141,18 @@ body {
   box-shadow: 10px 10px #5f5f5f44;
 }
 
-
 .note-title {
   font-size: 24px;
   color: white;
 }
 
-.note-text {
-  width: 200px;
-  height: 100px;
+.note-texts {
+  margin: 8px 28px 16px;
+  word-wrap: break-word;
   font-size: 14px;
-  padding: 8px 20px;
   color: white;
 }
+
 
 .close-icon {
   height: 20px;

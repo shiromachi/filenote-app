@@ -1,9 +1,51 @@
 .top-page-header {
-  width: 100vw;
-  padding: 2vh 0 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: white;
+}
+
+.top {
+  display: flex;
+}
+
+.top-image {
+  margin-top: 6px;
+  padding-left: 50px;
+  color: gray;
+}
+
+.top-up {
+  width: 60%;
+}
+
+.top-search-form {
+  width: 600px;
+  margin: 10px auto;
+}
+
+.top-search {
+  width: 400px;
+  height: 25px;
+  border: 1px solid #ddd;
+}
+
+.top-search-btn{
+  height: 25px;
+  padding: 0 10px;
+  color: dimgray;
+  border: none;
+}
+
+.top-right {
+  width: 40%;
+  height: 50px;
+  background-color: #f2ff43;
+}
+
+.top-left {
+  width: 100%;
+  height: 15px;
 }
 
 .top-border4 {
@@ -32,7 +74,7 @@
 .nav-bar {
   width: 100vw;
   height: 40px;
-  background-color: gray;
+  background-color: #24140e;
   display: flex;
 }
 

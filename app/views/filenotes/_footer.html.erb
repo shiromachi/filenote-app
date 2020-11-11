@@ -1,3 +1,28 @@
 <footer>
-  <%= breadcrumbs separator: " &rsaquo; ", class: 'pan-link' %>
+  <div class="footer-bar">
+    <%= breadcrumbs separator: " &rsaquo; ", class: 'pan-link' %>
+  </div>
+  <div class='footer-bottom'>
+    <div class="footer-left">
+      <div class='footer-left-contents'>
+        <div class='footer-image'>
+          <%= image_tag("filenote-logo1.png", class:"filenote-icon") %>
+        </div>
+        <%= "©︎" %><%= ' 2020 filenote-app.' %>
+      </div>
+    </div>
+    <div class='footer-middle'>
+      <p class='footer-title'>filenoteについて</p>
+      <p class='footer-str'>運営会社</p>
+      <p class='footer-str'>プライバシーポリシー</p>
+      <p class='footer-str'>利用規約</p>
+      <p class='footer-str'>ブログ</p>
+    </div>
+    <div class='footer-right'>
+      <p class='footer-title'>ペルプ</p>
+      <p class='footer-str'>filenoteの使い方</p>
+      <p class='footer-str'>アカウントの管理</p>
+      <p class='footer-str'>お問い合わせ</p>
+    </div>
+  </div>
 </footer>

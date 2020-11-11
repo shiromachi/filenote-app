@@ -3,21 +3,23 @@
   background-color: white;
 }
 
+.note-bar{
+  width: 50vw;
+}
+
 .plus {
   margin: 7px 0 0;
 }
 
-.page-heading {
-  width: 300px;
-  font-size: 35px;
-  margin-top: 20px;
+.work-image-tag {
+  width: 150px;
+  padding: 40px 50px 40px 0;
+  margin: 0 auto;
 }
 
-.tun-border {
-  border: 2px solid gray;
-  width: 50px;
-  margin-bottom: 40px;
-  border-radius: 5px;
+.work-all{
+  margin: 0 auto;
+  width: 200px;
 }
 
 .work-inner {

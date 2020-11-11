@@ -9,8 +9,9 @@
 
 <main class='work-contents'>
   <div class='content-inner'>
-    <center><p class='page-heading'>アプリ一覧</p>
-    <div class='tun-border'></div></center>
+    <div class='work-image-tag'>
+      <%=image_tag "work_all.png", class: "work-all"%>
+    </div>
     <div class='work__wrapper'>
       <% @works.reverse_each do |work| %>
         <div class='content'>
