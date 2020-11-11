@@ -55,14 +55,14 @@ body {
   height: 100px;
   padding: 10px;
   border-color: #ddd;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: white;
   margin: 30px auto;
 }
 
 .tweet-block {
   padding: 20px 20px 40px;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 300px;
   height: 300px;
   margin: 20px auto;
@@ -72,15 +72,11 @@ body {
   width: 70%;
 }
 
-.memo-page{
-  height: 100vh;
-}
-
 .memo-page__inner {
   width: 240px;
   padding: 18px;
   background-color: #fff;
-  border: 3px solid gray;
+  border: 2px solid gray;
   border-radius: 4px;
   margin: 20px;
   float: left;
@@ -112,7 +108,7 @@ body {
   float: left;
   margin-top: 20px;
   color: #fff;
-  background-color: #5f5f5f;
+  background-color: dimgrey;
 }
 
 .memo-page2__inner {
@@ -142,17 +138,16 @@ body {
 }
 
 .note-title {
-  font-size: 24px;
+  font-size: 18px;
   color: white;
 }
 
 .note-texts {
   margin: 8px 28px 16px;
   word-wrap: break-word;
-  font-size: 14px;
+  font-size: 12px;
   color: white;
 }
-
 
 .close-icon {
   height: 20px;

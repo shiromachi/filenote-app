@@ -18,8 +18,30 @@
 }
 
 .top-content {
-  width: 380px;
+  width: 300px;
   background-color: #ccbd99;
+}
+
+.category {
+  width: 150px;
+  margin: 40px auto;
+}
+
+.category-title {
+  font-size: 18px;
+  color: #432f2f;
+  margin-bottom: 15px;
+}
+
+.category-menu {
+  font-size: 15px;
+  color: #432f2f;
+  margin-left: 5px;
+}
+
+.category-border {
+  border: 1px solid seashell;
+  margin-bottom: 10px;
 }
 
 .left-contents {
