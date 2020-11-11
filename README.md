@@ -8,10 +8,10 @@
 
 https://filenote-app.herokuapp.com/
 
-###テストアカウント
+### テストアカウント
 
-email：sample@sample.com
-password：radish12
+- email：sample@sample.com
+- password：radish12
 
 ## 制作背景
 
