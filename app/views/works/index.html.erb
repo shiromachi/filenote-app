@@ -13,6 +13,7 @@
       <%=image_tag "work_all.png", class: "work-all"%>
     </div>
     <div class='work__wrapper'>
+      <% unless @works == nil %>
       <% @works.reverse_each do |work| %>
         <div class='content'>
           <div class='icon-images'>
@@ -29,6 +30,7 @@
             <div class='work-text'><%= work.text %></div>
           </div>
         </div>
+      <% end %>
       <% end %>
     </div>
   </div>

@@ -9,7 +9,7 @@ class FilenotesController < ApplicationController
     if @filenote.save
       redirect_to new_filenote_path 
     else
-      render :new 
+      redirect_to new_filenote_path  
     end
   end
 

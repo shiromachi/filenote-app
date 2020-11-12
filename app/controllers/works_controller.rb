@@ -1,6 +1,7 @@
 class WorksController < ApplicationController
   def index
     @works = Work.all
+    @work = Work.new
   end
 
   def new
@@ -10,9 +11,9 @@ class WorksController < ApplicationController
   def create
     @work = Work.new(work_params)
     if @work.save
-      redirect_to "/works"
+      redirect_to works_path
     else
-      render :index
+      render :new
     end
   end
 
@@ -22,8 +23,11 @@ class WorksController < ApplicationController
 
   def update
     @work = Work.find(params[:id])
-    @work.update(work_params)
-    redirect_to works_path 
+    if @work.update(work_params)
+      redirect_to works_path
+    else
+      render :edit
+    end
   end
 
   def destroy
@@ -35,6 +39,6 @@ class WorksController < ApplicationController
   private
 
   def work_params
-    params.permit(:app_name, :url, :text, :image).merge(user_id: current_user.id)
+    params.require(:work).permit(:app_name, :url, :text, :image).merge(user_id: current_user.id)
   end
 end

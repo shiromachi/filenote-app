@@ -63,7 +63,6 @@ h1 {
 }
 .account-page .field-label .field_with_errors {
   display: inline-block;
-  color: #d65f4c;
   font-weight: 400;
 }
 .account-page .field-input .field_with_errors {
@@ -80,24 +79,7 @@ h1 {
   background-color: #d65f4c;
 }
 
-#error_explanation {
-  margin: 20px 0;
-  padding: 20px 30px;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-}
-#error_explanation h2 {
-  margin-bottom: 10px;
+.error-message {
   color: #d65f4c;
-  font-size: 14px;
-}
-#error_explanation ul {
-  margin: 0;
-  padding-left: 17px;
-  list-style: square;
-}
-#error_explanation li {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
+  font-size: 15px;
 }
