@@ -37,6 +37,7 @@
       <div class='memo-page2__inner'>
         <div class='note__wrapper'>
           <% @filenotes.reverse_each do |filenote| %>
+          <% if current_user == filenote.user.id %>
             <div class='note-content'>
               <div>
                 <%= link_to image_tag("close-icon.png", class: 'close-icon'), filenote_path(filenote.id), method: :delete %>
@@ -46,6 +47,7 @@
                  </div>
               </div>
             </div>
+          <% end %>
           <% end %>
         </div>
       </div>
