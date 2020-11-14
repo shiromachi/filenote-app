@@ -18,14 +18,9 @@ https://filenote-app.herokuapp.com/
 
 プログラミングで学習した内容を簡単にまとめたい。
 
-## DEMO
-
 ## 開発環境
 
 Html/CSS/Ruby/Ruby on Rails/Jquery
-
-
-
 
 # DB設計
 
